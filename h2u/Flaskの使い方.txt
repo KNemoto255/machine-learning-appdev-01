@@ -1,0 +1,23 @@
+"""
+FlaskでローカルWEBサーバー上に画像をアップロードし、
+予測用モデルを使って画像に映っているものを予測する
+"""
+
+"""
+コマンドプロンプトで以下のコードを実行することで、ローカルWEBサーバー上でFlaskが起動する
+コマンドプロンプトの他にも、PyCharmで環境構築することでFlaskを実行できる
+
+cd C:\Users\user\Desktop\AI_ML_Learning\画像判定AIアプリ開発・パート1
+set FLASK_APP=flask_predictfile.py
+python -m flask run
+
+flask run
+
+Flaskが起動したら、以下のリンクにアクセスする
+http://127.0.0.1:5000
+
+次のレクチャーではFlaskのバージョンアップにより、スレッドを無効化してサーバープロセスを起動する必要がある
+
+python -m flask run --host=0.0.0.0 --port=8080 --without-threads
+
+"""
